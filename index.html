@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- link of css -->
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="selectMovieSec">
+            <label for="movie">Select a movie</label>
+            <select name="movie" id="movie">
+                <option value="100">Titanic</option>
+                <option value="150">Avatar</option>
+                <option value="200">KGF</option>
+            </select>
+        </div>
+        <div class="showCause">
+            <div class="showCauseContainer">
+                <div class="seat NotAvailable"></div>
+                <small>Not Available</small>
+            </div>
+            <div class="showCauseContainer">
+                <div class="seat selected"></div>
+                <small>selected</small>
+            </div>
+            <div class="showCauseContainer">
+                <div class="seat occupied"></div>
+                <small>occupied</small>
+            </div>
+        </div>
+        <div class="screenContainer">
+            <div class="screen">
+            </div>
+        </div>
+        <div class="seatContainer">
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat NotAvailable"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat NotAvailable"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat NotAvailable"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat NotAvailable"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+        </div>
+        <div class="message">
+            <p class="discription">
+                You have selected &nbsp<span class="bold" id="totalSeat">0</span> &nbsp seats for a price of  &nbsp ₹ <span class="bold" id="totalCost">0</span>.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
