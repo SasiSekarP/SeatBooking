@@ -28,14 +28,17 @@ movieEl.addEventListener('change', (e) => {
     TicketPrice = Number(movieEl.value);
 })
 
-selectSeatEl.addEventListener('click', (e) => {
-    if (!e.target.classList.contains('occupied')) {
-        e.target.classList.toggle('selected');
+selectSeatEl.addEventListener('click',(e)=> {
+    if (e.target.classList.contains('seat')) {
+        if (!e.target.classList.contains('occupied')) {
+            e.target.classList.toggle('selected');
 
-        totalSeat = document.querySelectorAll('.row .seat.selected').length;
+            totalSeat = document.querySelectorAll('.row .seat.selected').length;
 
-        TotalCost = TicketPrice * totalSeat;
+            TotalCost = TicketPrice * totalSeat;
 
-        UpdateCountAndPrice()
+            UpdateCountAndPrice()
+        }
     }
+
 })
