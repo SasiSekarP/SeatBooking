@@ -11,7 +11,7 @@
     --color-white-: rgb(255, 255, 255);
     --color-blue-: rgb(33, 26, 60);
     --color-selected-: rgb(181, 157, 252);
-    --color-NotAvailable: rgb(131, 143, 131);
+    --color-Available: rgb(131, 143, 131);
     --color-occupied: rgb(255, 255, 255);
 
 }
@@ -62,14 +62,14 @@ select{
     height: 30px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background-color: var(--color-white-);
+    background-color: var(--color-Available);
 }
 
 .seatContainer .seat:hover{
     cursor: pointer;
 }
 
-.seatContainer .seat.NotAvailable{
+.seatContainer .seat.Available{
     cursor: default;
 }
 
@@ -79,10 +79,6 @@ select{
 
 .occupied{
     background-color: var(--color-occupied);
-}
-
-.NotAvailable{
-    background-color: var(--color-NotAvailable);
 }
 
 .screenContainer{

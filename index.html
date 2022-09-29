@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="selectMovieSec">
+        <div class="selectMovieSec" id="selectMovieForm">
             <label for="movie">Select a movie</label>
             <select name="movie" id="movie">
                 <option value="100">Titanic</option>
@@ -21,8 +21,8 @@
         </div>
         <div class="showCase">
             <div class="showCaseContainer">
-                <div class="seat NotAvailable"></div>
-                <small>Not Available</small>
+                <div class="seat Available"></div>
+                <small>Available</small>
             </div>
             <div class="showCaseContainer">
                 <div class="seat selected"></div>
@@ -37,11 +37,41 @@
             <div class="screen">
             </div>
         </div>
-        <div class="seatContainer">
+        <div class="seatContainer" id="selectSeat">
+            <div class="row">
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
             <div class="row">
                 <div class="seat"></div>
                 <div class="seat"></div>
-                <div class="seat NotAvailable"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
                 <div class="seat"></div>
                 <div class="seat"></div>
                 <div class="seat"></div>
@@ -50,43 +80,13 @@
             </div>
             <div class="row">
                 <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
                 <div class="seat"></div>
+                <div class="seat occupied"></div>
                 <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat NotAvailable"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-            </div>
-            <div class="row">
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat NotAvailable"></div>
-            </div>
-            <div class="row">
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-            </div>
-            <div class="row">
-                <div class="seat NotAvailable"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
-                <div class="seat"></div>
+                <div class="seat occupied"></div>
             </div>
         </div>
         <div class="message">
@@ -95,5 +95,6 @@
             </p>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
